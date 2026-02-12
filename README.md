@@ -1,66 +1,37 @@
-## Foundry
+# ARKNFTCollection 🚀
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+ERC721 NFT Collection deployed on **Arbitrum One** using **Foundry**.
 
-Foundry consists of:
+---
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🛠 Tech Stack
 
-## Documentation
+- Solidity ^0.8.30
+- Foundry
+- OpenZeppelin ERC721
+- Arbitrum One
 
-https://book.getfoundry.sh/
+---
 
-## Usage
+## 📦 Features
 
-### Build
+- Minting with supply cap
+- Configurable baseURI
+- Contract verified on Arbiscan
+- Deployed on Arbitrum Mainnet
 
-```shell
-$ forge build
-```
+---
 
-### Test
+## 📍 Contract Address
 
-```shell
-$ forge test
-```
+https://arbiscan.io/address/0x6E7d8D32eE6ce4537D50655E54411Ebc69954190
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## 🚀 Deployment
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+```bash
+forge script script/DeployNFTCollection.s.sol:DeployNFTCollection \
+--rpc-url https://arb1.arbitrum.io/rpc \
+--broadcast \
+--verify
