@@ -1,0 +1,11 @@
+{
+    "name": "ARK NFT 1",
+    "descrition": "NFT collection by Aiub Raissuni",
+    "image": "ipfs://bafybeidpcqxx3zo7dtyb3imglbzd7tkur6xxgpb6fkuw6ficwjan4n2c4a",
+    "attribute": [
+        {
+            "train_type": "Rarity",
+            "value": "1"
+        }
+    ]
+}
